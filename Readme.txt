@@ -19,3 +19,5 @@ Para llevar este curso instalamos algunas extensiones, asi que dando click en el
 5.-Debugger for Chrome nos permite trabajar directamente con visual studio code sin necesidad de salir de nuestra herramienta y ya no tenemos que ir a chrome para hacer debug.
 
 6.-Visual Studio IntelliCode nos permite completar el codigo de manera inteligente cuando estamos escribiendo de manera automatica.
+
+7.-Path Intellisense nos permite seleccionar mas facilmente los archivos, aunque esten distintas carpetas vamos a poder seleccionar mas facilmente los recursos que compartamos en nuestras paginas HTML.
