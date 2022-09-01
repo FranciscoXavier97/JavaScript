@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecero">Ejemplo DOM con Javascript</h1>
+    <p class="azul">Saludos!</p>
+    <p class="azul">Otro parrafo</p>
+    <p class="azul">footer</p>
+    <!--Javascript-->
+    <script>
+        //ByClassName busca todos los class
+        let elementos = document.getElementsByClassName("azul");
+        console.log(`No. elementos: ${elementos.length}`);  
+        for(let elemento of elementos){
+            console.log(`${elemento.innerHTML}`)
+        }
+    </script>
+</body>
+</html>

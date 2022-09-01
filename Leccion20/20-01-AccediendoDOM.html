@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM con JS</title>
+</head>
+<body>
+    <h1 id="cabecero">Ejemplo DOM con Javascript</h1>
+    <p id="parrafo">Saludos!</p>
+    <script>
+        let cabecero = document.getElementById("cabecero").innerHTML;
+        console.log("valor cabecero: " + cabecero);
+        let parrafo = document.getElementById("parrafo").innerHTML;
+        console.log("valor de parrafo: " + parrafo);
+        console.log("saludos desde Javascript");
+    </script>
+</body>
+</html>

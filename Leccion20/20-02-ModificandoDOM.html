@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM con JS</title>
+</head>
+<body>
+    <h1 id="cabecero">Ejemplo DOM con Javascript</h1>
+    <p id="parrafo">Saludos!</p>
+    <script>
+        let cabecero = document.getElementById("cabecero");
+        //podemos usar template literal
+        console.log(`Valor de cabecero: ${cabecero.innerHTML}`);
+        let parrafo = document.getElementById("parrafo");
+        console.log(`Valor de parrafo: ${parrafo.innerHTML}`);
+        console.log("saludos desde Javascript");
+        //modificar el innerHTML - Checar en consola
+        parrafo.innerHTML = "Nuevo parrafo";
+        cabecero.innerHTML = "Nuevo cabecero";  
+    </script>
+</body>
+</html>

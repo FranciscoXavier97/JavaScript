@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM con JS</title>
+</head>
+<body>
+    <!--No se necesita id cuando se usa ByTagName-->
+    <h1 id="cabecero">Ejemplo DOM con Javascript</h1>
+    <p>Saludos!</p>
+    <p>Otro parrafo</p>
+    <!--Javascript-->
+    <script>
+        let parrafos = document.getElementsByTagName("p");
+        console.log(`No. párrafos: ${parrafos.length}`);  
+        for(let i=0; i<parrafos.length; i++){
+            console.log(`${i} - ${parrafos[i].innerHTML}`);
+        }
+    </script>
+</body>
+</html>
